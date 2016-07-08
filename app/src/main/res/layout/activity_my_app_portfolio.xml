@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_blue"
+    tools:context="com.example.naruto.myappportfolio.MyAppPortfolio"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MY NANODEGREE APPS!"
+        android:textColor="@color/port_text_color"
+        android:id="@+id/port_header"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/UdacityImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/text_margin_top" />
+
+    <Button
+        style="@style/App_port_button"
+        android:text="POPULAR MOVIES"
+        android:id="@+id/popular_movies"
+        android:layout_below="@+id/port_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/button_margin_top" />
+
+    <Button
+        style="@style/App_port_button"
+        android:text="STOCK HAWK"
+        android:id="@+id/stock_hawk"
+        android:layout_below="@+id/popular_movies"
+        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@+id/button" />
+
+    <Button
+        style="@style/App_port_button"
+        android:text="BUILD IT BIGGER"
+        android:id="@+id/build_it_bigger"
+        android:layout_below="@+id/stock_hawk"
+        android:layout_alignStart="@+id/stock_hawk" />
+
+    <Button
+        style="@style/App_port_button"
+        android:text="MAKE YOUR APP MATERIAL"
+        android:id="@+id/make_your_app_material"
+        android:layout_below="@+id/build_it_bigger"
+        android:layout_alignStart="@+id/build_it_bigger" />
+
+    <Button
+        style="@style/App_port_button"
+        android:text="GO UBIQUITOUS"
+        android:id="@+id/go_ubiquitous"
+        android:layout_below="@+id/make_your_app_material"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="@style/App_port_button"
+        android:text="CAPSTONE"
+        android:id="@+id/capstone"
+        android:layout_below="@+id/go_ubiquitous"
+        android:layout_alignStart="@+id/make_your_app_material" />
+
+</LinearLayout>

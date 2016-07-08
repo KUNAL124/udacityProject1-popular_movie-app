@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_blue"
+    android:orientation="vertical"
+    tools:context="com.example.naruto.myappportfolio.MyAppPortfolio">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MY NANODEGREE APPS!"
+        android:textColor="@color/port_text_color"
+        android:id="@+id/port_header"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/UdacityImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/text_margin_top" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/port_header">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingTop="50dp"
+            android:paddingLeft="10dp">
+
+            <Button
+                android:id="@+id/popular_movies"
+                style="@style/App_port_button"
+                android:layout_centerHorizontal="true"
+                android:text="POPULAR MOVIES" />
+
+            <Button
+                android:id="@+id/stock_hawk"
+                style="@style/App_port_button"
+                android:layout_alignStart="@+id/button"
+                android:layout_below="@+id/popular_movies"
+                android:text="STOCK HAWK" />
+
+            <Button
+                android:id="@+id/build_it_bigger"
+                style="@style/App_port_button"
+                android:layout_below="@+id/stock_hawk"
+                android:text="BUILD IT BIGGER" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+
+            <Button
+                android:id="@+id/make_your_app_material"
+                style="@style/App_port_button"
+                android:layout_alignStart="@+id/build_it_bigger"
+                android:text="MAKE YOUR APP MATERIAL" />
+
+            <Button
+                android:id="@+id/go_ubiquitous"
+                style="@style/App_port_button"
+                android:layout_below="@+id/make_your_app_material"
+                android:text="GO UBIQUITOUS" />
+
+            <Button
+                android:id="@+id/capstone"
+                style="@style/App_port_button"
+                android:layout_alignStart="@+id/make_your_app_material"
+                android:layout_below="@+id/go_ubiquitous"
+                android:text="CAPSTONE" />
+        </LinearLayout>
+    </GridLayout>
+</RelativeLayout>
